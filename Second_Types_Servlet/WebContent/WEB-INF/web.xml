@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <servlet>
+    <description></description>
+    <display-name>Aservlet</display-name>
+    <servlet-name>Aservlet</servlet-name>
+    <servlet-class>Aservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Aservlet</servlet-name>
+    <url-pattern>/a</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Bservlet</display-name>
+    <servlet-name>Bservlet</servlet-name>
+    <servlet-class>Bservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Bservlet</servlet-name>
+    <url-pattern>/b</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Cservlet</display-name>
+    <servlet-name>Cservlet</servlet-name>
+    <servlet-class>Cservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Cservlet</servlet-name>
+    <url-pattern>/c</url-pattern>
+  </servlet-mapping>
+</web-app>

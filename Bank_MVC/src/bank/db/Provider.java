@@ -1,0 +1,29 @@
+package bank.db;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class Provider {
+	public static Connection getMysqlConnection() {
+		Connection con = null;
+		try {
+			Class.forName("com.mysql.jdbc.driver");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db1", "root", "sipusipu18");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return con;
+	}
+
+	public static Connection getOracleConnection() {
+		Connection con = null;
+		try {
+			Class.forName("oracle.jdbc.OracleDriver");
+			con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "sipusipu18");
+		} catch (Exception e) {
+			e.printStackTrace(); // It will show the details about Exception
+		}
+		return con;
+	}
+}
